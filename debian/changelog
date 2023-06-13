@@ -1,5 +1,116 @@
-template-repository (1.0-1) unstable; urgency=medium
+libcgi-emulate-psgi-perl (0.23-2) unstable; urgency=medium
 
-  * Initial release
+  [ Damyan Ivanov ]
+  * declare conformance with Policy 4.1.3 (no changes needed)
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+  [ Salvatore Bonaccorso ]
+  * Update Vcs-* headers for switch to salsa.debian.org
+
+  [ gregor herrmann ]
+  * debian/*: update URLs from {search,www}.cpan.org to MetaCPAN.
+
+  [ Laurent Baillet ]
+  * fix lintian file-contains-trailing-whitespace warning
+
+  [ gregor herrmann ]
+  * debian/watch: use uscan version 4.
+
+  [ Debian Janitor ]
+  * Bump debhelper from old 9 to 12.
+  * Set debhelper-compat version in Build-Depends.
+  * Set upstream metadata fields: Bug-Submit.
+  * Remove obsolete fields Contact, Name from debian/upstream/metadata
+    (already present in machine-readable debian/copyright).
+  * Remove constraints unnecessary since stretch:
+    + Build-Depends-Indep: Drop versioned constraint on libcgi-pm-perl,
+      libtest-requires-perl.
+    + libcgi-emulate-psgi-perl: Drop versioned constraint on libcgi-pm-perl in
+      Depends.
+  * Bump debhelper from old 12 to 13.
+
+ -- Jelmer Vernooĳ <jelmer@debian.org>  Fri, 10 Jun 2022 00:47:00 +0100
+
+libcgi-emulate-psgi-perl (0.23-1) unstable; urgency=medium
+
+  * Team upload
+
+  * New upstream version 0.23
+  * declare conformance with Policy 4.1.1 (no changes needed)
+
+ -- Damyan Ivanov <dmn@debian.org>  Sat, 04 Nov 2017 17:43:36 +0000
+
+libcgi-emulate-psgi-perl (0.22-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Salvatore Bonaccorso ]
+  * debian/control: Use HTTPS transport protocol for Vcs-Git URI
+
+  [ gregor herrmann ]
+  * debian/copyright: change Copyright-Format 1.0 URL to HTTPS.
+
+  [ Lucas Kanashiro ]
+  * Import upstream version 0.22
+  * Update Debian packaging copyright
+  * Declare compliance with Debian policy 3.9.8
+
+ -- Lucas Kanashiro <kanashiro@debian.org>  Thu, 21 Jul 2016 14:28:57 -0300
+
+libcgi-emulate-psgi-perl (0.21-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Lucas Kanashiro ]
+  * Add debian/upstream/metadata
+  * Import upstream version 0.21
+  * Bump debhelper compatibility level to 9
+  * Update VCS urls and use metacpan url in manpage
+  * Add module name in description
+  * Add autopkgtest-pkg-perl
+  * Set year of upstream copyright
+  * Update dependencies
+
+  [ gregor herrmann ]
+  * Add more build dependencies to enable additional test.
+
+ -- Lucas Kanashiro <kanashiro.duarte@gmail.com>  Mon, 17 Aug 2015 09:40:12 -0300
+
+libcgi-emulate-psgi-perl (0.20-1) unstable; urgency=medium
+
+  * Package now maintained by the Debian Perl Group
+  * Update debian/watch to use metacpan URL
+  * New upstream release
+    - update dependencies
+  * Update Standards-Version (no changes)
+  * Don't install duplicate README content in /usr/share/doc
+
+ -- Dominic Hargreaves <dom@earth.li>  Sun, 05 Oct 2014 10:48:23 +0100
+
+libcgi-emulate-psgi-perl (0.15-1) unstable; urgency=low
+
+  * Switch to dpkg-source 3.0 (quilt) format
+  * New upstream release
+
+ -- Dominic Hargreaves <dom@earth.li>  Sat, 20 Apr 2013 14:07:21 +0100
+
+libcgi-emulate-psgi-perl (0.14-1) unstable; urgency=low
+
+  * New upstream release
+  * Switch to debhelper compat level 8
+  * Update debian/copyright to 1.0 format
+  * Update Standards-Version (no changes)
+
+ -- Dominic Hargreaves <dom@earth.li>  Sun, 18 Mar 2012 19:23:42 +0000
+
+libcgi-emulate-psgi-perl (0.12-1) unstable; urgency=low
+
+  * New upstream release
+  * Update Standards-Version (no changes)
+
+ -- Dominic Hargreaves <dom@earth.li>  Mon, 29 Aug 2011 13:50:02 +0100
+
+libcgi-emulate-psgi-perl (0.10-1) unstable; urgency=low
+
+  * Initial Release. (Closes: #608299)
+
+ -- Dominic Hargreaves <dom@earth.li>  Thu, 30 Dec 2010 21:00:41 +0000

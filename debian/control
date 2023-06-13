@@ -1,15 +1,33 @@
-Source: template-repository
-Section: unknown
+Source: libcgi-emulate-psgi-perl
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Uploaders: Dominic Hargreaves <dom@earth.li>
+Section: perl
+Testsuite: autopkgtest-pkg-perl
 Priority: optional
-Maintainer: Tsic404 <liuheng@deepin.org>
-Build-Depends: debhelper (>= 11)
+Build-Depends: debhelper-compat (= 13)
+Build-Depends-Indep: libcgi-pm-perl,
+                     libhttp-message-perl,
+                     libplack-perl,
+                     libtest-requires-perl,
+                     libwww-perl,
+                     perl
 Standards-Version: 4.1.3
-Homepage: https://github.com/deepin-community/template-repository
-#Vcs-Browser: https://salsa.debian.org/debian/deepin-community-template-repository
-#Vcs-Git: https://salsa.debian.org/debian/deepin-community-template-repository.git
+Vcs-Browser: https://salsa.debian.org/perl-team/modules/packages/libcgi-emulate-psgi-perl
+Vcs-Git: https://salsa.debian.org/perl-team/modules/packages/libcgi-emulate-psgi-perl.git
+Homepage: https://metacpan.org/release/CGI-Emulate-PSGI
 
-Package: template-repository
-Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Package: libcgi-emulate-psgi-perl
+Architecture: all
+Depends: ${misc:Depends},
+         ${perl:Depends},
+         libcgi-pm-perl,
+         libwww-perl
+Description: PSGI adapter for CGI
+ CGI::Emulate::PSGI allows an application designed for the CGI environment to
+ run in a PSGI environment, and thus on any of the backends that PSGI
+ supports.
+ .
+ It works by translating the environment provided by the PSGI specification
+ to one expected by the CGI specification. Likewise, it captures output as
+ it would be prepared for the CGI standard, and translates it to the format
+ expected for the PSGI standard using CGI::Parse::PSGI module.
